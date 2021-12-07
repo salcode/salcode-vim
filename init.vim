@@ -22,4 +22,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin(data_dir . '/plugins')
+
+source ~/.config/nvim/plugins/vim-tmux-navigator.vim
+
 call plug#end()
