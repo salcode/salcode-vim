@@ -21,3 +21,5 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+call plug#begin(data_dir . '/plugins')
+call plug#end()
