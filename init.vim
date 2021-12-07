@@ -30,3 +30,4 @@ source ~/.config/nvim/plugins/vim-tmux-navigator.vim
 source ~/.config/nvim/plugins/vim-vinegar.vim
 
 call plug#end()
+doautocmd User PlugLoaded
