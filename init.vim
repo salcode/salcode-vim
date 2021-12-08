@@ -11,6 +11,7 @@ set number
 set termguicolors
 set clipboard=unnamedplus
 set noswapfile
+set noshowmode
 
 "--------------------------------------------------------------------------
 " Key maps
