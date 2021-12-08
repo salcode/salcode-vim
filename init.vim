@@ -34,6 +34,7 @@ call plug#begin(data_dir . '/plugins')
 source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/dracula.vim
+source ~/.config/nvim/plugins/git-stage-hunk.vim
 source ~/.config/nvim/plugins/unimpaired.vim
 source ~/.config/nvim/plugins/vim-tmux-navigator.vim
 source ~/.config/nvim/plugins/vim-vinegar.vim
