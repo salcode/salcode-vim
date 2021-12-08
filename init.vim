@@ -10,6 +10,7 @@ set relativenumber
 set number
 set termguicolors
 set clipboard=unnamedplus
+set noswapfile
 
 "--------------------------------------------------------------------------
 " Key maps
