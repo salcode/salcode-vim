@@ -12,6 +12,8 @@ set termguicolors
 set clipboard=unnamedplus
 set noswapfile
 set noshowmode
+set list
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 "--------------------------------------------------------------------------
 " Key maps
