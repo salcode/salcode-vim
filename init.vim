@@ -14,6 +14,8 @@ set noswapfile
 set noshowmode
 set list
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set ignorecase
+set smartcase
 
 "--------------------------------------------------------------------------
 " Key maps
