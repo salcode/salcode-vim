@@ -37,3 +37,9 @@ doautocmd User PlugLoaded
 "--------------------------------------------------------------------------
 " Miscellaneous
 "--------------------------------------------------------------------------
+
+" Source $MYVIMRC when it is saved.
+augroup VimReload
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
