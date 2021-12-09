@@ -34,6 +34,10 @@ nnoremap <leader>ts4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab<CR>
 nnoremap <leader>tt2 :set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab<CR>
 " Tab rendered as four spaces
 nnoremap <leader>tt4 :set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab<CR>
+
+" Close current buffer but keep the split :BD
+command! BD execute 'b#|bd #'
+
 "--------------------------------------------------------------------------
 " Plugins
 "--------------------------------------------------------------------------
