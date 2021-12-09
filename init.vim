@@ -16,6 +16,7 @@ set list
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 set ignorecase
 set smartcase
+set hlsearch
 
 "--------------------------------------------------------------------------
 " Key maps
