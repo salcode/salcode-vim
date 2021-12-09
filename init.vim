@@ -25,6 +25,15 @@ set incsearch
 
 let mapleader = "\<space>"
 
+" Common indention settings:
+" Two spaces
+nnoremap <leader>ts2 :set tabstop=2 softtabstop=2 shiftwidth=2 expandtab<CR>
+" Four spaces
+nnoremap <leader>ts4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab<CR>
+" Tab rendered as two spaces
+nnoremap <leader>tt2 :set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab<CR>
+" Tab rendered as four spaces
+nnoremap <leader>tt4 :set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab<CR>
 "--------------------------------------------------------------------------
 " Plugins
 "--------------------------------------------------------------------------
