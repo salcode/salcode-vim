@@ -38,6 +38,11 @@ nnoremap <leader>tt4 :set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab<CR>
 " Close current buffer but keep the split :BD
 command! BD execute 'b#|bd #'
 
+" map j to gj and k to gk, so line navigation ignores line wrap
+" http://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
+nnoremap <expr> k v:count == 0 ? 'gk' : 'k'
+nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
+
 "--------------------------------------------------------------------------
 " Plugins
 "--------------------------------------------------------------------------
@@ -51,11 +56,14 @@ endif
 call plug#begin(data_dir . '/plugins')
 
 source ~/.config/nvim/plugins/airline.vim
+source ~/.config/nvim/plugins/coc.vim
 source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/dracula.vim
 source ~/.config/nvim/plugins/editorconfig.vim
+source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/git-stage-hunk.vim
 source ~/.config/nvim/plugins/unimpaired.vim
+source ~/.config/nvim/plugins/vim-javascript.vim
 source ~/.config/nvim/plugins/vim-tmux-navigator.vim
 source ~/.config/nvim/plugins/vim-vinegar.vim
 
@@ -71,3 +79,10 @@ augroup VimReload
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
+
+command! -range JSONFormat <line1>,<line2>!python -m json.tool
+
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
+endif
